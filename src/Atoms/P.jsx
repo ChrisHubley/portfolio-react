@@ -1,4 +1,4 @@
-export default function P(text){
+export default function P({text}){
     return(
         <p 
         className="

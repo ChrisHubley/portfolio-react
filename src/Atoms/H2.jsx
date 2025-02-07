@@ -1,4 +1,4 @@
-export default function H2(text){
+export default function H2({text}){
    return( 
    <h2 className="
         text-[#ff52b2}
