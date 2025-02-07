@@ -3,7 +3,7 @@ import NavLinks from "../Atoms/NavLinks";
 export default function NavBar(){
     return(
         <nav className="
-            flex flex-row justify-between align-baseline gap-2
+            flex flex-row justify-between gap-2
             text-white text-xl
             p-0 m-0 ">
 
