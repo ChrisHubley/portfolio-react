@@ -1,5 +1,5 @@
-import H2 from "../Atoms/H2";
-import H4 from "../Atoms/H4";
+import H2 from "../components/Atoms/H2";
+import H4 from "../components/Atoms/H4";
 
 export default function Welcome(){
     return(

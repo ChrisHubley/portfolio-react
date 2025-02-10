@@ -1,4 +1,5 @@
 import Divider from "./components/Divider";
+import About from "./sections/About";
 import Header from "./sections/Header";
 import Welcome from "./sections/Welcome";
 
@@ -8,6 +9,8 @@ export default function App(){
     <div className="bg-black m-0">
       <Header />
       <Welcome />
+      <Divider />
+      <About />
       <Divider />
       
     </div>

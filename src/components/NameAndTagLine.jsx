@@ -1,5 +1,5 @@
-import H1 from "../Atoms/H1";
-import H3 from "../Atoms/H3";
+import H1 from "./Atoms/H1";
+import H3 from "./Atoms/H3";
 
 export default function NameAndTagLine(){
     return(
