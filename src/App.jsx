@@ -1,6 +1,9 @@
 import Divider from "./components/Divider";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 import Header from "./sections/Header";
+import Portfolio from "./sections/Portfolio";
 import Welcome from "./sections/Welcome";
 
 export default function App(){
@@ -12,6 +15,10 @@ export default function App(){
       <Divider />
       <About />
       <Divider />
+      <Portfolio />
+      <Divider />
+      <Contact />
+      <Footer />
       
     </div>
     
