@@ -5,24 +5,25 @@ export default function Contact(){
     return(
         <section className="bg-[url(images/background2.jpg)] pb-[24px]">
             <H2 text="Get in touch"/>
-            <div id="contact" className="
-               w-100% max-w-[500px] md:max-w-[700px] md:m-auto
-            my-0 mx-auto p-0">
-                <form className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-2 md:m-[24px] bg-white p-4">
-                    <label className="md:justify-right" htmlFor="name">Name:</label>
-                    <input className="border" type="text" id="name" name="name"/>
-                    <label htmlFor="email">Email Address:</label>
-                    <input className="border" type="email" id="email" name="email"/>
-                    <label htmlFor="message">Message:</label>
-                    <textarea className="border comments" id="comments" name="field3"></textarea>
-                    <span></span>
-                    <div>
-                        <p className="error">Please complete all fields</p>
-                        <Button type="submit" text="Submit" onClick="this.onClickSubmit"/>
-                        {/*<input type="submit" value="Submit"/>*/}
-                    </div>
-                </form>
-            </div>
+                <div id="contact" className="p-1.5 bg-[url(images/portfolio_background.png)]
+            w-100% max-w-3xl my-[24px] mx-2 md:mx-auto">
+                    <form className="grid grid-cols-1 md:grid-cols-[1fr_3fr] p-4
+                                    gap-2  bg-white ">
+                        <label className="md:justify-self-end" htmlFor="name">Name:</label>
+                        <input className="border" type="text" id="name" name="name"/>
+                        <label className="md:justify-self-end" htmlFor="email">Email Address:</label>
+                        <input className="border" type="email" id="email" name="email"/>
+                        <label className="md:justify-self-end" htmlFor="message">Message:</label>
+                        <textarea className="border comments" id="comments" name="field3"></textarea>
+                        <span></span>
+                        <div>
+                            <p className="error">Please complete all fields</p>
+                            <Button type="submit" text="Submit" onClick="this.onClickSubmit"/>
+                            {/*<input type="submit" value="Submit"/>*/}
+                        </div>
+                    </form>
+                </div>
+
         </section>
     )
 }

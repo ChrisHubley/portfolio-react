@@ -3,7 +3,7 @@ export default function P({text}){
         <p 
         className="
         text-sm 
-        font-sans 
+        font-sans
         p-20px
         bg-white
         

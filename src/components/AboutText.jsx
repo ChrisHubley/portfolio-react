@@ -17,25 +17,19 @@ export default function AboutText(){
     useEffect(getData, [])
 
     return(
-        <div>
-            <H2 text="About"/> 
-            <div className="md:grid md:grid-cols-[1fr_3fr]">
-                <span></span>
-                {text.map(function (copy){
-                    return (
-                    <P 
-                    className="
-                    text-sm 
-                    font-sans 
-                    p-[20px]
-                    bg-white
-                    mt-[20px] mr-[30px] mb-0 ml-0
-                    "
-
-                    key={copy.about} text={copy.about} />
-                     )})}
-
+            <div>
+                <div className="md:grid md:grid-cols-[1fr_3fr]">
+                    <span></span>
+                    <div className="p-1.5 bg-[url(images/portfolio_background.png)]
+                                      my-[24px] md:mt-[24px] md:mb-0">
+                        <div className="p-4 bg-white">
+                        {text.map(function (copy){
+                            return (
+                                <P key={copy.about} text={copy.about}/>
+                             )})}
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     )
 }

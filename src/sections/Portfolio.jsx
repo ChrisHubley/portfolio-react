@@ -30,6 +30,7 @@ export default function Portfolio(){
                             image={project.image}
                             info={project.info}
                             alt={project.alt}
+                            link={project.link}
                         />
             })}
             </div>
