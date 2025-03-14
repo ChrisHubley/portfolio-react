@@ -6,11 +6,14 @@ export default function Header(){
         <header className="bg-black">
             <div className="
                 h-[90px] 
+                backdrop-brightness-50
                 bg-[url(images/portfolio_background.png)] 
             "></div>
             <div className="
-            flex flex-row 
-            justify-between items-baseline 
+            md:flex 
+
+            md:flex-row 
+            md:justify-between md:items-baseline 
             py-0 pr-3 pl-0">
                 <NameAndTagLine />
                 <NavBar/>

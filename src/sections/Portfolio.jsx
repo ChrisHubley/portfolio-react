@@ -9,7 +9,7 @@ export default function Portfolio(){
 
         fetch("/portfolio/portfolio.json")
             .then(res => res.json())
-            .then(fetchedInfo =>{
+            .then(fetchedInfo => {
                 setPortfolioData(fetchedInfo.projects)
                 console.log(fetchedInfo.projects)
 
@@ -19,8 +19,8 @@ export default function Portfolio(){
 
     return (
         <section className="bg-[url(images/welcome_background.jpg)]">
-            <H2 text="Portfolio" />
-            <div className="bg-white 
+             <H2 text="Portfolio" />
+            <div className="bg-white
             p-[20px] my-[20px] mx-auto w-100% max-w-[700px] ">
 
                 {portfolioData.map(function (project){

@@ -1,0 +1,8 @@
+To Do List
+
+Stuff I can't work out:
+    Adding fonts
+    Getting the portfolio titles to be links
+    getting the "back to top" button to go back to the top
+    Black bars under some of the sections
+    Tinting the banner/divide background images
