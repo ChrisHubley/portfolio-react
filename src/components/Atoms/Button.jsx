@@ -1,7 +1,7 @@
 export default function Button({type, text, onClick}) {
     return (
         <button className="
-        bg-black text-[#ffe557] 
+        bg-black text-[#fffb00]
         hover:bg-[#ff00c7] hover:text-black
 
         p-[6px_7px_5px_7px]

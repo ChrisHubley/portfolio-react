@@ -3,13 +3,13 @@ import Button from "../components/Atoms/Button.jsx";
 
 export default function Contact(){
     return(
-        <section className="bg-[url(images/background2.jpg)]">
+        <section className="bg-[url(images/background2.jpg)] pb-[24px]">
             <H2 text="Get in touch"/>
-            <div id="contact">
-                <form className="grid grid-cols-1 md:grid-cols-[2fr_1fr]
-                        w-100% max-w-[500px] md:max-w-[1000px]
-            p-3 bg-white">
-                    <label htmlFor="name">Name:</label>
+            <div id="contact" className="
+               w-100% max-w-[500px] md:max-w-[700px] md:m-auto
+            my-0 mx-auto p-0">
+                <form className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-2 md:m-[24px] bg-white p-4">
+                    <label className="md:justify-right" htmlFor="name">Name:</label>
                     <input className="border" type="text" id="name" name="name"/>
                     <label htmlFor="email">Email Address:</label>
                     <input className="border" type="email" id="email" name="email"/>

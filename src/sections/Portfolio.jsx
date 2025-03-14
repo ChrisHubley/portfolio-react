@@ -18,7 +18,7 @@ export default function Portfolio(){
     useEffect(getData, [])
 
     return (
-        <section className="bg-[url(images/welcome_background.jpg)]">
+        <section className="bg-[url(images/welcome_background.jpg)] pb-[24px]">
              <H2 text="Portfolio" />
             <div className="bg-white
             p-[20px] my-[20px] mx-auto w-100% max-w-[700px] ">
