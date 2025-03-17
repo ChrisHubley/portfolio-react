@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import H2 from "../components/Atoms/H2";
 import PortfolioInfo from "../components/PortfolioInfo";
+import PortfolioModal from "../components/PortfolioModal.jsx";
 
 export default function Portfolio(){
     const [portfolioData, setPortfolioData] = useState([])
@@ -20,9 +21,13 @@ export default function Portfolio(){
     return (
         <section className="bg-[url(images/welcome_background.jpg)] pb-[24px]">
              <H2 text="Portfolio" />
+            <div className="p-1.5 bg-[url(images/portfolio_background.png)]
+                                            md:bg-[url(images/portfolio_background_desktop.png)]
+                                            bg-cover
+                                            w-100% max-w-[350px] lg:max-w-[1050px] md:max-w-[700px] my-[24px] md:mx-auto">
             <div className="bg-white
-            p-[20px] my-[20px] mx-auto w-100% max-w-[700px] ">
-
+            p-4
+            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {portfolioData.map(function (project){
                     return <PortfolioInfo
                             key={project.title}
@@ -34,6 +39,9 @@ export default function Portfolio(){
                         />
             })}
             </div>
+            </div>
+                <PortfolioModal />
+
 
         </section>
 
