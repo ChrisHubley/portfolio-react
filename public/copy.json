@@ -7,7 +7,7 @@
             "welcome": "This is the first bit of text people will read on my page! It gives people a bit of information about me but not as much as in 'About'. It is a certain length so I have to keep writing.",
             
             "about": "This is my about text, it is a longer piece of text telling people about me and what I can do. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt expedita quibusdam perspiciatis odio, nostrum voluptate similique reiciendis reprehenderit optio numquam ullam explicabo, porro, placeat quas distinctio iure mollitia magni incidunt. This is my about text, it is a longer piece of text telling people about me and what I can do. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt expedita quibusdam perspiciatis odio, nostrum voluptate similique reiciendis reprehenderit optio numquam ullam explicabo, porro, placeat quas distinctio iure mollitia magni incidunt.",
-            
+
             "portfolioIntro": "I don't know if I'll use this, but this is a bit of text to go at the start of my portfolio section."
         }
     ]

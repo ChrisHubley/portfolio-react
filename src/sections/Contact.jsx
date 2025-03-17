@@ -6,7 +6,9 @@ export default function Contact(){
         <section className="bg-[url(images/background2.jpg)] pb-[24px]">
             <H2 text="Get in touch"/>
                 <div id="contact" className="p-1.5 bg-[url(images/portfolio_background.png)]
-            w-100% max-w-3xl my-[24px] mx-2 md:mx-auto">
+                                            md:bg-[url(images/portfolio_background_desktop.png)]
+                                            bg-cover
+                                            w-100% max-w-3xl my-[24px] mx-2 md:mx-auto">
                     <form className="grid grid-cols-1 md:grid-cols-[1fr_3fr] p-4
                                     gap-2  bg-white ">
                         <label className="md:justify-self-end" htmlFor="name">Name:</label>

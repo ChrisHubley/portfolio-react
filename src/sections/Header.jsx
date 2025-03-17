@@ -9,7 +9,9 @@ export default function Header(){
             <div className="
                 h-[90px] 
                 backdrop-brightness-50
-                bg-[url(images/portfolio_background.png)] 
+                bg-[url(images/portfolio_background.png)]
+                md:bg-[url(images/portfolio_background_desktop.png)]
+                bg-cover
             "></div>
             <div className="
             md:flex

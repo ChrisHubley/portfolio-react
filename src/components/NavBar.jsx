@@ -16,11 +16,11 @@ export default function NavBar(){
             <NavLinks text="Portfolio" link="#"/>
             <p>|</p>
             <NavLinks text="Contact" link="#"/>
-            <div className="text-white text-3xl">
+            <div className="text-white text-3xl ">
                 <a href="https://github.com/ChrisHubley" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon className="px-2" icon={faGithub} /></a>
+                    <FontAwesomeIcon className="px-2 hover:text-[#fffb00] active:text-[#ff00c7]" icon={faGithub} /></a>
                 <a href="https://www.linkedin.com/in/chris-hubley-72b25b318/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon className="px-2" icon={faLinkedin} /></a>
+                    <FontAwesomeIcon className="px-2 hover:text-[#fffb00] active:text-[#ff00c7]" icon={faLinkedin} /></a>
             </div>
         </nav>
     )
