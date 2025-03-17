@@ -1,9 +1,9 @@
-import Button from "./Atoms/Button.jsx";
+import ButtonLink from "./Atoms/ButtonLink.jsx";
 
 export default function BackToTop() {
     return (
         <div className="fixed bottom-[30px] right-[20px]">
-            <Button type="button" onClick={"/"} text="▲Back to top" />
+            <ButtonLink link="/" text="▲Back to top" />
         </div>
     )
 }

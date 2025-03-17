@@ -1,4 +1,4 @@
-export default function Button({type, text, onClick, as, href}) {
+export default function Button({type, text, onClick}) {
     return (
         <button className="
         bg-black text-[#fffb00]
