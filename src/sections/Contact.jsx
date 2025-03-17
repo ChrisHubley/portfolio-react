@@ -19,7 +19,6 @@ export default function Contact(){
                         <div>
                             <p className="error">Please complete all fields</p>
                             <Button type="submit" text="Submit" onClick="this.onClickSubmit"/>
-                            {/*<input type="submit" value="Submit"/>*/}
                         </div>
                     </form>
                 </div>
