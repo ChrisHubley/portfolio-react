@@ -1,17 +1,12 @@
 export default function NavLinks({text, link}){
     return(
-        
         <a className="
-            text-white 
-            text-xl
-            p-0
-            text-[1.5rem]
+            text-[1.2rem]
             hover:text-[#fffb00]
             active:text-[#ff00c7]
-            
+            font-[special-elite]
+            leading-10
         " href={link}>{text}</a>
-    
-    
     )
 }
 

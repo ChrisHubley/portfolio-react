@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: harting;
+    src: url(/fonts/harting/harting_plain.ttf);
+}
+
+@font-face {
+    font-family: special-elite;
+    src: url(/fonts/special-elite/special_elite.ttf);
+}

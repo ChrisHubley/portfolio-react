@@ -7,7 +7,7 @@ export default function Header(){
     return(
         <header className="bg-black">
             <div className="
-                h-[90px] 
+                h-[90px]
                 backdrop-brightness-50
                 bg-[url(images/portfolio_background.png)]
                 md:bg-[url(images/portfolio_background_desktop.png)]

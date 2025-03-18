@@ -2,11 +2,12 @@ export default function H1({text}){
     return(
         <h1
             className="
-        m-0
-        text-[#ff00c7]
-        text-6xl
-
-        "
+              text-[#ff00c7]
+              text-[56px]
+              font-[Harting]
+              py-[-5]
+              leading-15
+              "
         >{text}</h1>
     )
 }

@@ -19,15 +19,17 @@ export default function Portfolio(){
     useEffect(getData, [])
 
     return (
-        <section className="bg-[url(images/welcome_background.jpg)] pb-[24px]">
-             <H2 text="Portfolio" />
-            <div className="p-1.5 bg-[url(images/portfolio_background.png)]
-                                            md:bg-[url(images/portfolio_background_desktop.png)]
-                                            bg-cover
-                                            w-100% max-w-[350px] lg:max-w-[1050px] md:max-w-[700px] my-[24px] md:mx-auto">
-            <div className="bg-white
-            p-4
-            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <section className="bg-[url(images/welcome_background.jpg)] p-[24px] content-center">
+            <div className="bg-black border-2 border-[#0910ce]
+             w-100% max-w-[350px] lg:max-w-[1050px] md:max-w-[700px]
+            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+             my-[24px] mx-2 md:mx-auto
+             md:px-[30px]  p-5
+             ">
+                <H2 text="Portfolio" />
+            <div className="
+            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+
                 {portfolioData.map(function (project){
                     return <PortfolioInfo
                             key={project.title}

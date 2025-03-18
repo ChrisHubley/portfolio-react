@@ -6,9 +6,10 @@ export default function Footer(){
             bg-[url(images/portfolio_background.png)]
             md:bg-[url(images/portfolio_background_desktop.png)]
             bg-cover
-            flex justify-center self-end
+            flex justify-center items-center
+            font-[special-elite]
             "> 
-            <p className=" text-white text-xl">Copyright 2025 </p>
+            <p className=" text-white text-xl align-self-middle drop-shadow-[2px_2px_0_rgba(0,0,0,1)]">Copyright 2025 </p>
         </footer>
     )
 }

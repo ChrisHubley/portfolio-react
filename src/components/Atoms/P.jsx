@@ -5,7 +5,7 @@ export default function P({text}){
         text-sm 
         font-sans
         p-20px
-        bg-white
+        text-white
         
         ">{text}</p>
     )

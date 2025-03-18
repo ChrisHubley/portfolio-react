@@ -17,20 +17,16 @@ export default function AboutText(){
     useEffect(getData, [])
 
     return(
-            <div>
                 <div className="md:grid md:grid-cols-[1fr_3fr]">
                     <span></span>
-                    <div className="p-1.5 bg-[url(images/portfolio_background.png)]
-                                       md:bg-[url(images/portfolio_background_desktop.png)] bg-cover
-                                      my-[24px] md:mt-[24px] md:mb-0">
-                        <div className="p-4 bg-white">
-                        {text.map(function (copy){
+                        <div className="px-7 py-5 my-[24px] md:mt-[50px] bg-black border-2 border-[#0910ce]">
+                            <H2 text="About"/>
+                            {text.map(function (copy){
                             return (
                                 <P key={copy.about} text={copy.about}/>
                              )})}
-                        </div>
+                        {/*</div>*/}
                     </div>
                 </div>
-            </div>
     )
 }

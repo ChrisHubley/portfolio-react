@@ -6,7 +6,9 @@ export default function H3({text}){
             m-0
             pl-2
             pb-2
-        
+            leading-3
+            font-[special-elite]
+            text-[18px]
         "
         >{text}</h3>
     )
