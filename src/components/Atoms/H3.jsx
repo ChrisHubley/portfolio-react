@@ -9,7 +9,7 @@ export default function H3({text}){
             leading-3
             font-[special-elite]
             text-[18px]
-        "
+            "
         >{text}</h3>
     )
 }

@@ -3,7 +3,6 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-
 export default function NavBar(){
     return(
         <nav className="
@@ -12,7 +11,7 @@ export default function NavBar(){
 
             <NavLinks text="About" link="#"/>
             <p>|</p>
-            <NavLinks text="Portfolio" link="#"/>
+            <NavLinks text="Projects" link="#"/>
             <p>|</p>
             <NavLinks text="Contact" link="#"/>
                 <a href="https://github.com/ChrisHubley" target="_blank" rel="noopener noreferrer">
