@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Header(){
     return(
-        <header className="bg-black">
+        <header className="sticky top-0 bg-black">
             <div className="
                 h-[90px]
                 backdrop-brightness-50

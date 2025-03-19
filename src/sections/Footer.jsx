@@ -2,7 +2,8 @@ import P from "../components/Atoms/P";
 
 export default function Footer(){
     return(
-        <footer className="h-[70px]
+        <footer className="h-[50px]
+            sticky bottom-0
             bg-[url(images/portfolio_background.png)]
             md:bg-[url(images/portfolio_background_desktop.png)]
             bg-cover

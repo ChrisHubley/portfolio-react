@@ -2,7 +2,7 @@ import Box from "../components/Atoms/Box.jsx";
 import AboutText from "../components/content/AboutText.jsx";
 export default function About(){
     return(
-        <section className="bg-[url(images/background2.jpg)] pb-[24px]">
+        <section className=" pb-[24px]">
 
             <div className="
                 grid grid-cols-1 md:grid-cols-[2fr_1fr] items-center

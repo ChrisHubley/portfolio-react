@@ -3,7 +3,11 @@ import H4 from "../Atoms/H4.jsx";
 
 export default function WelcomeContent(){
     return(
-            <div>
+            <div className="
+        p-5 w-100% max-w-3xl my-[24px] mx-2
+        md:mx-auto md:px-[30px]
+
+        ">
                 <div className="flex">
                     <p className="text-[3rem] text-[#fffb00] font-[Harting]">✴</p>
                     <H2 text="Welcome!" />
