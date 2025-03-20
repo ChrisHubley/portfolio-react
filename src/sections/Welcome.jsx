@@ -1,19 +1,36 @@
-import H2 from "../components/Atoms/H2.jsx";
 import H4 from "../components/Atoms/H4.jsx";
+import FetchRequest from "../components/FetchRequest.jsx";
 
 export default function Welcome(){
     return(
      <section className=" py-[24px] ">
          <div className="
-        p-5 w-100% max-w-3xl my-[24px] mx-2
+        w-100% max-w-3xl md:my-12 mx-2
         md:mx-auto md:px-[30px]
-
+        flex
         ">
-             <div className="flex">
-                 <p className="text-[3rem] text-[#fffb00] font-[Harting]">✴</p>
-                 <H2 text="Welcome!" />
+             <p className="text-[4rem] text-[#fffb00] justify-object-top pr-3 font-[Harting]">✴</p>
+             <div className="md:flex ">
+                 <div className="">
+                 <h2 className="
+                    text-[#ff00c7]
+                    text-[2.5rem]
+                    font-[special-elite]
+                    leading-19
+                    "
+                 >Welcome!</h2>
+                     <div className="border-t-[#0910ce] border-2 py-3 mr-10">
+                         <H4 text={<FetchRequest section="welcome" />} />
+                     </div>
+                 </div>
+                 <div>
+                     <img className="
+                    w-100% max-w-[200px] my-0 mx-auto rounded-full
+                    md:max-w-[200px]
+                    drop-shadow-[10px_5px_0_#fffb00]"
+                    src="/src/images/my_picture.jpg" alt="" />
+                </div>
              </div>
-             <H4 text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nihil odio provident accusantium dolore dolorum doloremque cumque! Officiis, accusamus repudiandae earum accusantium numquam error necessitatibus at sed. Corrupti, sint quod." />
          </div>
      </section>
     )

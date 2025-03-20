@@ -3,8 +3,8 @@ import PortfolioContent from "../components/content/PortfolioContent.jsx";
 
 export default function Portfolio(){
     return (
-        <section className=" p-[24px] content-center">
-            <Box content={<PortfolioContent />}/>;
+        <section >
+            <Box title="Projects" content={<PortfolioContent />}/>;
         </section>
     )
 }

@@ -5,9 +5,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Header(){
     return(
-        <header className="sticky top-0 bg-black">
+        <header className="sticky z-10 top-0 bg-black">
             <div className="
-                h-[90px]
+                md:h-[90px]
+                h-[50px]
                 backdrop-brightness-50
                 bg-[url(images/portfolio_background.png)]
                 md:bg-[url(images/portfolio_background_desktop.png)]

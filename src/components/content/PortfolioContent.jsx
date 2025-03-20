@@ -1,4 +1,3 @@
-import H2 from "../Atoms/H2.jsx";
 import PortfolioInfo from "../PortfolioInfo.jsx";
 import {useEffect, useState} from "react";
 
@@ -11,15 +10,10 @@ export default function PortfolioContent(){
             .then(fetchedInfo => {
                 setPortfolioData(fetchedInfo.projects)
                 console.log(fetchedInfo.projects)
-
             })
     }
     useEffect(getData, [])
    return (
-       <div className="
-
-             ">
-        <H2 text="Projects" />
         <div className="
             grid grid-cols-1 md:grid-cols-2 gap-2">
 
@@ -33,7 +27,6 @@ export default function PortfolioContent(){
                     link={project.link}
                 />
             })}
-        </div>
     </div>
    )
 }
