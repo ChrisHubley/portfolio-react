@@ -3,26 +3,32 @@ import BackToTop from "./components/BackToTop.jsx";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
-import Portfolio from "./sections/Portfolio";
 import Welcome from "./sections/Welcome.jsx";
+import Projects from "./sections/Projects.jsx";
+import ProjectModal from "./components/ProjectModal.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App(){
 
   return(
-    <div className="bg-black m-0" id="top">
+      <div className="bg-black">
+  <BrowserRouter>
       <Header />
       <Welcome />
 
       <About />
 
-      <Portfolio />
+      <Projects />
+        {/*<ProjectModal />*/}
 
       <Contact />
       <Footer />
       <BackToTop />
-      
-    </div>
-    
+<Routes>
+      <Route path="/project/:id" element={<ProjectModal />} />
+</Routes>
+  </BrowserRouter>
+      </div>
   )
 }
 // bg-[#110919]
