@@ -1,7 +1,7 @@
-import PortfolioInfo from "../PortfolioInfo.jsx";
+import Projectlayout from "../Projectlayout.jsx";
 import {useEffect, useState} from "react";
 
-export default function PortfolioContent(){
+export default function ProjectContent(){
     const [portfolioData, setPortfolioData] = useState([])
     function getData(){
 
@@ -9,24 +9,30 @@ export default function PortfolioContent(){
             .then(res => res.json())
             .then(fetchedInfo => {
                 setPortfolioData(fetchedInfo.projects)
-                console.log(fetchedInfo.projects)
             })
     }
     useEffect(getData, [])
    return (
+       <div>
+           <p className=" text-white
+            m-0
+            pb-7
+            font-[special-elite]
+            text-[18px]
+            ">Click a project to find out more and view on Github</p>
         <div className="
-            grid grid-cols-1 md:grid-cols-2 gap-2">
+            grid grid-cols-1 md:grid-cols-2 gap-10">
 
             {portfolioData.map(function (project){
-                return <PortfolioInfo
+                return <Projectlayout
                     key={project.title}
                     title={project.title}
                     image={project.image}
-                    info={project.info}
                     alt={project.alt}
-                    link={project.link}
                 />
             })}
     </div>
+       </div>
+
    )
 }

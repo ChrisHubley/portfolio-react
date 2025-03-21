@@ -6,6 +6,8 @@ import Button from "../Atoms/Button.jsx";
 
 export default function ContactContent(){
     return(
+        //TODO: Make form work, add validations
+
         <div>
             <form className="
             grid grid-cols-1 md:grid-cols-[1fr_3fr]
@@ -13,15 +15,14 @@ export default function ContactContent(){
             text-white
             font-[special-elite]
             ">
+                <label className="md:justify-self-end text-white" htmlFor="name">Name:</label>
+                <input className="bg-white text-black pl-1 font-sans text-sm" type="text" id="name" name="name"/>
 
-                <label className="md:justify-self-end " htmlFor="name">Name:</label>
-                <input className="bg-white" type="text" id="name" name="name"/>
+                <label className="md:justify-self-end text-white" htmlFor="email">Email Address:</label>
+                <input className="bg-white text-black pl-1 font-sans text-sm" type="email" id="email" name="email"/>
 
-                <label className="md:justify-self-end" htmlFor="email">Email Address:</label>
-                <input className="bg-white" type="email" id="email" name="email"/>
-
-                <label className="md:justify-self-end" htmlFor="message">Message:</label>
-                <textarea className=" bg-white" id="message" name="message"></textarea>
+                <label className="md:justify-self-end text-white" htmlFor="message">Message:</label>
+                <textarea className=" bg-white text-black pl-1 font-sans text-sm h-20" id="message" name="message"></textarea>
                 <span></span>
                 <div>
                     <Button className="my-5" type="submit" text="Submit" onClick="this.onClickSubmit"/>

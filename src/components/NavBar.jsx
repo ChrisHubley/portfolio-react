@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function NavBar(){
     return(
+        //TODO: Make links work
         <nav className="
             flex flex-row md:justify-between ml-[7px] md:ml-0 gap-1 align-top
             text-white text-[1.2rem]">
