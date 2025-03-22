@@ -1,15 +1,15 @@
 
 import H1 from "./Atoms/H1";
 import H3 from "./Atoms/H3";
-import FetchRequest from "./FetchRequest";
+import GetContent from "./GetContent.jsx";
 
 export default function NameAndTagLine(){
    return(
-        <div>
+        <a href="/" >
             <H1 text="chris hubley." />
             <H3 text={
-                <FetchRequest section="tagline" /> 
+                <GetContent section="tagline" />
             }/>
-        </div>
+        </a>
     )
 }

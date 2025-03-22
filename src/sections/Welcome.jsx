@@ -1,5 +1,5 @@
 import H4 from "../components/Atoms/H4.jsx";
-import FetchRequest from "../components/FetchRequest.jsx";
+import GetContent from "../components/GetContent.jsx";
 
 export default function Welcome(){
     return(
@@ -20,7 +20,7 @@ export default function Welcome(){
                     "
                  >Welcome!</h2>
                      <div className="border-t-[#0910ce] border-2 py-3 mr-10">
-                         <H4 text={<FetchRequest section="welcome" />} />
+                         <H4 text={<GetContent section="welcome" />} />
                      </div>
                  </div>
                  <div>

@@ -10,11 +10,13 @@ export default function NavBar(){
             flex flex-row md:justify-between ml-[7px] md:ml-0 gap-1 align-top
             text-white text-[1.2rem]">
 
-            <NavLinks text="About" link="#"/>
+            <NavLinks text="About" link="#About"/>
             <p>|</p>
-            <NavLinks text="Projects" link="#"/>
+            <NavLinks text="Projects" link="#Projects"/>
             <p>|</p>
-            <NavLinks text="Contact" link="#"/>
+            <NavLinks text="Contact" link="#Get In Touch"/>
+            <p>|</p>
+            <NavLinks text="Home" link="/"/>
                 <a href="https://github.com/ChrisHubley" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon className="hover:text-[#fffb00] text-[#ff00c7] active:text-[#ff00c7] pl-1 text-[1.7rem]" icon={faGithub}/></a>
                 <a href="https://www.linkedin.com/in/chris-hubley-72b25b318/" target="_blank" rel="noopener noreferrer">

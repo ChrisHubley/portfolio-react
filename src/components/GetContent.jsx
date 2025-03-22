@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function FetchRequest({section}){
+export default function GetContent({section}){
 
     const [text, setText] = useState([])
      function getData(){

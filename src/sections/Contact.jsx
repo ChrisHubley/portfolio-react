@@ -3,7 +3,7 @@ import Box from "../components/Atoms/Box.jsx";
 
 export default function Contact(){
     return(
-        <section>
+        <section className="pb-[150px]">
             <Box title="Get In Touch" content={<ContactContent />} />
         </section>
     )

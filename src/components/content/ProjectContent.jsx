@@ -1,8 +1,9 @@
-import Projectlayout from "../Projectlayout.jsx";
+import ProjectLayout from "../ProjectLayout.jsx";
 import {useEffect, useState} from "react";
 
 export default function ProjectContent(){
     const [portfolioData, setPortfolioData] = useState([])
+
     function getData(){
 
         fetch("/portfolio/portfolio.json")
@@ -24,8 +25,8 @@ export default function ProjectContent(){
             grid grid-cols-1 md:grid-cols-2 gap-10">
 
             {portfolioData.map(function (project){
-                return <Projectlayout
-                    key={project.title}
+                return <ProjectLayout
+                    key={project.id}
                     title={project.title}
                     image={project.image}
                     alt={project.alt}

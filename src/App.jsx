@@ -23,7 +23,7 @@ export default function App(){
 
       <Contact />
       <Footer />
-      <BackToTop />
+
 <Routes>
       <Route path="/project/:id" element={<ProjectModal />} />
 </Routes>

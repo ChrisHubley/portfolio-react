@@ -1,10 +1,9 @@
 import {useEffect, useState} from "react";
 import ProjectModalLayout from "./ProjectModalLayout.jsx";
-import { useParams } from "react-router-dom";
 
-export default function ProjectModal(){
+export default function ProjectModal({id}){
     //TODO: Make modal and make it work
-    const {id} = useParams()
+
     const [title, setTitle] = useState("")
     const [info, setInfo] = useState("")
     const [image, setImage] = useState("")
