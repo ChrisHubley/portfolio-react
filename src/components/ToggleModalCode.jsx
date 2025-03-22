@@ -1,16 +1,16 @@
 import {useState} from "react";
-import H3 from "./Atoms/H3.jsx";
+import ProjectModal from "./ProjectModal.jsx";
 
-export default function ToggleModalCode({title, image, alt, buttonContent}) {
-    const [modalVisible, setModalVisible] = useState(false)
+export default function ToggleModalCode({buttonContent, id}) {
+    const [modalVisible, setModalVisible] = useState(null)
         const changeState=()=>{
             setModalVisible((pre => !pre));
         }
         return (
-            <>
-                {modalVisible ? <div>Show Content</div> : null}
+            <div>
+                {modalVisible ? <ProjectModal id={id} />: null}
                 <button onClick={changeState}>{buttonContent}
                 </button>
-            </>
+            </div>
         )
 }

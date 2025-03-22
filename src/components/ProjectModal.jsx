@@ -30,7 +30,7 @@ export default function ProjectModal({id}){
     useEffect(getProject, [])
 
     return(
-        <ProjectModalLayout info={info} alt={alt} github={github} image={image} title={title} date={date} liveLink={link} />
+        <ProjectModalLayout id={id} info={info} alt={alt} github={github} image={image} title={title} date={date} liveLink={link} />
     )
 }
 
