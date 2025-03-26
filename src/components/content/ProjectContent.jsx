@@ -27,6 +27,7 @@ export default function ProjectContent(){
             {portfolioData.map(function (project){
                 return <ProjectLayout
                     key={project.id}
+                    id={project.id}
                     title={project.title}
                     image={project.image}
                     alt={project.alt}

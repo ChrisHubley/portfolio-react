@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 
 export default function GetContent({section}){
-
     const [text, setText] = useState([])
      function getData(){
-    
         fetch("/copy.json")
             .then(res => res.json())
             .then(fetchedInfo =>{
@@ -13,12 +11,9 @@ export default function GetContent({section}){
      }
     useEffect(getData, [])
  
- 
-    let content = text.map((copy, index) => {
+   return( text.map((copy, index) => {
         return (
-           <span key={index}>{copy[section]}</span>
+           <span dangerouslySetInnerHTML={{__html: copy[section]}} key={index} />
         );
-    });
-
-    return content;
+   }))
 }

@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
 import ProjectModalLayout from "./ProjectModalLayout.jsx";
+import ProjectLayout from "./ProjectLayout.jsx";
 
-export default function ProjectModal({id}){
+export default function ProjectModal({id, toggle}){
     //TODO: Make modal and make it work
 
     const [title, setTitle] = useState("")
@@ -14,9 +15,14 @@ export default function ProjectModal({id}){
 
     function getProject() {
 
-        fetch(`/portfolio/portfolio.json/${id}`)
+        fetch(`/portfolio/portfolio.json`)
             .then(res => res.json())
             .then(fetchedInfo => {
+                //then loop through the projects and find the one that matches the id
+//                 {portfolioData.map(function (project){
+//
+//
+// foreach ($projects )
                 setTitle(fetchedInfo.projects.title)
                 setInfo(fetchedInfo.projects.info)
                 setImage(fetchedInfo.projects.image)
@@ -30,7 +36,7 @@ export default function ProjectModal({id}){
     useEffect(getProject, [])
 
     return(
-        <ProjectModalLayout id={id} info={info} alt={alt} github={github} image={image} title={title} date={date} liveLink={link} />
+        <ProjectModalLayout toggle={toggle} id={id} info={info} alt={alt} github={github} image={image} title={title} date={date} liveLink={link} />
     )
 }
 
