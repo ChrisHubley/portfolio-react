@@ -8,7 +8,7 @@ export default function H3({text}){
             pb-2
             leading-3
             font-[special-elite]
-            text-[18px]
+            text-sm md:text-lg
             "
         >{text}</h3>
     )

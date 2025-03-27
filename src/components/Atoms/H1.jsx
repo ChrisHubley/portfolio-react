@@ -3,10 +3,12 @@ export default function H1({text}){
         <h1
             className="
               text-[#ff00c7]
-              text-[56px]
+              text-4xl md:text-6xl
               font-[Harting]
-              py-[-5]
-              leading-15
+              leading-5.5
+              md:leading-19
+              pt-2
+              md:pt-0
               "
         >{text}</h1>
     )

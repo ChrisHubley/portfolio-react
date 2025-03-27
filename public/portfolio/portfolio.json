@@ -2,27 +2,33 @@
 
     "projects": [
         {
+            "id": 1,
             "title": "The JSON Worked",
-            "info": "LoLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt expedita quibusdam perspiciatis odio, nostrum voluptate similique reiciendis reprehenderit optio numquam ullam explicabo, porro, placeat quas distinctio iure mollitia magni incidunt.",
+            "info": "LoLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt expedita quibusdam perspiciatis odio, nostrum voluptate similique reiciendis reprehenderit optio numquam ullam explicabo, porro, placeat quas distinctio iure mollitia magni incidunt. <br><a className:'text-[#fffb00] hover:text-[#ff00c7] ' href='http://www.google.com' target='_blank'>View live project</a>",
             "image": "/portfolio/images/project_1.png",
             "alt": "some alt text",
-            "link": "https://github.com/wowie",
+            "github": "https://github.com/wowie",
+            "liveLink": "https://github.com/wowie",
             "date": "Feb 2025"
         },
         {
+            "id": 2,
             "title": "It worked twice",
             "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt expedita quibusdam perspiciatis odio, nostrum voluptate similique reiciendis reprehenderit optio numquam ullam explicabo, porro, placeat quas distinctio iure mollitia magni incidunt.",
             "image": "/portfolio/images/project_2.png",
             "alt": "some alt text",
-            "link": "https://github.com/zowie",
+            "github": "https://github.com/zowie",
+            "liveLink": false,
             "date": "Feb 2025"
         },
         {
+            "id": 3,
             "title": "And it's worked thrice",
             "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt expedita quibusdam perspiciatis odio, nostrum voluptate similique reiciendis reprehenderit optio numquam ullam explicabo, porro, placeat quas distinctio iure mollitia magni incidunt.",
             "image": "/portfolio/images/project_3.png",
             "alt": "some alt text",
-            "link": "https://github.com/kapowie",
+            "github": "https://github.com/kapowie",
+            "liveLink": false,
             "date": "Feb 2025"
         }
     ]
