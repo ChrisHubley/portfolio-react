@@ -18,9 +18,7 @@ export default function ProjectModal({id, toggle}){
         fetch(`/portfolio/portfolio.json`)
             .then(res => res.json())
             .then(fetchedInfo => {
-              const project = fetchedInfo.projects.find(element => element.id === id)
-                //then loop through the projects and find the one that matches the id
-                console.log(id)
+                const project = fetchedInfo.projects.find(element => element.id === id)
                 setTitle(project.title)
                 setInfo(project.info)
                 setImage(project.image)

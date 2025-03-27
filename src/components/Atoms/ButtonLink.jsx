@@ -1,6 +1,6 @@
 export default function ButtonLink({text, link}){
     return(
-        <a href={link} className=
+        <a href={link} target="_blank" className=
             "bg-black text-[#fffb00]
             hover:bg-[#ff00c7] hover:text-black
             text-sm

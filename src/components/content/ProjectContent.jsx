@@ -17,10 +17,10 @@ export default function ProjectContent(){
        <div>
            <p className=" text-white
             m-0
-            pb-7
+            md:pb-7
             font-[special-elite]
-            text-[18px]
-            ">Click a project to find out more and view on Github</p>
+            text-base
+            ">Click a project to read more and view on Github</p>
         <div className="
             grid grid-cols-1 md:grid-cols-2 gap-10">
 
