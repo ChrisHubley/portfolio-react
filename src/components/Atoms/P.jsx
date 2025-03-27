@@ -6,7 +6,7 @@ export default function P({text}){
         font-sans
         p-20px
         text-white
-        
+        text-left
         ">{text}</p>
     )
 }

@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Header(){
     return(
-        <header className="sticky z-10 top-0 bg-black">
+        <header className="sticky z-1 top-0 bg-black">
             <div className="
                 md:h-[90px]
                 h-[50px]

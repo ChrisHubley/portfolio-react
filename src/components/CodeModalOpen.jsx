@@ -10,7 +10,7 @@ export default function CodeModalOpen({buttonContent, id}) {
 
         return (
             <div className="App">
-                {isOpen && <ProjectModal toggle={toggle} />}
+                {isOpen && <ProjectModal id={id} toggle={toggle} />}
                 <button onClick={toggle}>{buttonContent}</button>
             </div>
         );

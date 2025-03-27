@@ -18,22 +18,20 @@ export default function ProjectModal({id, toggle}){
         fetch(`/portfolio/portfolio.json`)
             .then(res => res.json())
             .then(fetchedInfo => {
+              const project = fetchedInfo.projects.find(element => element.id === id)
                 //then loop through the projects and find the one that matches the id
-//                 {portfolioData.map(function (project){
-//
-//
-// foreach ($projects )
-                setTitle(fetchedInfo.projects.title)
-                setInfo(fetchedInfo.projects.info)
-                setImage(fetchedInfo.projects.image)
-                setAlt(fetchedInfo.projects.alt)
-                setGithub(fetchedInfo.projects.github)
-                setLink(fetchedInfo.projects.liveLink)
-                setDate(fetchedInfo.projects.date)
+                console.log(id)
+                setTitle(project.title)
+                setInfo(project.info)
+                setImage(project.image)
+                setAlt(project.alt)
+                setGithub(project.github)
+                setLink(project.liveLink)
+                setDate(project.date)
             })
     }
 
-    useEffect(getProject, [])
+    useEffect(getProject, [id])
 
     return(
         <ProjectModalLayout toggle={toggle} id={id} info={info} alt={alt} github={github} image={image} title={title} date={date} liveLink={link} />

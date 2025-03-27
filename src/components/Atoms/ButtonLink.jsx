@@ -3,6 +3,7 @@ export default function ButtonLink({text, link}){
         <a href={link} className=
             "bg-black text-[#fffb00]
             hover:bg-[#ff00c7] hover:text-black
+            text-sm
             border border-[#ff00c7]
             font-[special-elite]
             p-[6px_7px_3px_7px]
