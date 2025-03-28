@@ -9,8 +9,8 @@ export default function Header(){
     return(
         <header className="sticky z-1 top-0 bg-black">
             <div className="
-                md:h-[90px]
-                h-[30px]
+                md:h-15
+                h-7
                 backdrop-brightness-50
                 bg-[url(images/portfolio_background.png)]
                 md:bg-[url(images/portfolio_background_desktop.png)]

@@ -1,5 +1,4 @@
 import About from "./sections/About";
-import BackToTop from "./components/BackToTop.jsx";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";

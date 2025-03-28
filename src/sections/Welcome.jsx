@@ -5,12 +5,12 @@ import H3 from "../components/Atoms/H3.jsx";
 export default function Welcome(){
     return(
      <section >
-         <div className="md:pt-2 mt-2 z-2 md:fixed md:top-35">
+         <div className="md:pt-2 mt-2 z-2 md:fixed md:top-27">
              <H3 text={<GetContent section="tagline" />}/>
          </div>
          <div className="
                 w-full max-w-4xl
-                md:my-12 my-5
+                md:my-20 my-5
                 md:mx-auto md:px-[30px]
                 md:grid md:grid-cols-[2fr_1fr]
                 items-end
